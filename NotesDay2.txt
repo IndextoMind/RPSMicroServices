@@ -1,0 +1,38 @@
+1)Set the path in environment variable to the bin of mongodb.
+2)run the command mongod --dbpath="path of the folder where you want the database"
+3)open another command prompt and type the command "mongo".
+4)show dbs;
+5)at runtime we can create the database.
+6)cf login -a api.run.pivotal.io
+7)cf push kyc007-cf -p"C:\MyData\BOAMicroservices\KYCApp\KYCApp\target\KYCApp-0.0.1-SNAPSHOT.jar"
+
+https://console.run.pivotal.io/
+
+Consul
+https://www.consul.io/downloads.html
+consul agent -server -bootstrap-expect=1 -data-dir=consul-data -ui -bind=192.168.56.1
+localhost:8500
+ IPv4 Address. . . . . . . . . . . : 192.168.56.1
+192.168.56.1:8300
+127.0.0.1:8500
+
+Hystrix dashboard
+
+http://localhost:9091/hystrix
+http://localhost:9091/actuator/hystrix.stream
+
+Docker
+
+clean install dockerfile:build
+docker run -h 192.168.99.100 -p 6060:6060 -t my-repo/example --name my-repo-image:latest
+
+docker pull mysql/mysql-server
+
+docker run --name boadb -e MYSQL_ROOT_PASSWORD=password -e MYSQL_DATABASE=boadb -e MYSQL_USER=root -p 3306:3306 mysql/mysql-server:5.5
+
+Eureka
+http://localhost:8761/
+
+git init
+
+config server
